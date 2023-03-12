@@ -161,20 +161,6 @@ au_open	(SF_PRIVATE *psf)
 				error = double64_init (psf) ;
 				break ;
 
-		case SF_FORMAT_G721_32 :
-				error = g72x_init (psf) ;
-				psf->sf.seekable = SF_FALSE ;
-				break ;
-
-		case SF_FORMAT_G723_24 :
-				error = g72x_init (psf) ;
-				psf->sf.seekable = SF_FALSE ;
-				break ;
-
-		case SF_FORMAT_G723_40 :
-				error = g72x_init (psf) ;
-				psf->sf.seekable = SF_FALSE ;
-				break ;
 		/* Lite remove end */
 
 		default :	break ;

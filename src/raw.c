@@ -67,10 +67,6 @@ raw_open	(SF_PRIVATE *psf)
 				error = alaw_init (psf) ;
 				break ;
 
-		case SF_FORMAT_GSM610 :
-				error = gsm610_init (psf) ;
-				break ;
-
 		/* Lite remove start */
 
 		case SF_FORMAT_NMS_ADPCM_16 :

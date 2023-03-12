@@ -360,12 +360,6 @@ aiff_open (SF_PRIVATE *psf)
 				break ;
 		/* Lite remove end */
 
-		case SF_FORMAT_GSM610 :
-				error = gsm610_init (psf) ;
-				if (psf->sf.frames > comm_fmt.numSampleFrames)
-					psf->sf.frames = comm_fmt.numSampleFrames ;
-				break ;
-
 		default : return SFE_UNIMPLEMENTED ;
 		} ;
 

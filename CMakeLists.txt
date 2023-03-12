@@ -271,7 +271,6 @@ add_library (sndfile
 	src/double64.c
 	src/ima_adpcm.c
 	src/ms_adpcm.c
-	src/gsm610.c
 	src/dwvw.c
 	src/vox_adpcm.c
 	src/interleave.c
@@ -298,7 +297,6 @@ add_library (sndfile
 	src/caf.c
 	src/dwd.c
 	src/flac.c
-	src/g72x.c
 	src/htk.c
 	src/ircam.c
 	src/macos.c
@@ -332,30 +330,6 @@ add_library (sndfile
 	src/mpeg.c
 	src/mpeg_decode.c
 	src/mpeg_l3_encode.c
-	src/GSM610/config.h
-	src/GSM610/gsm.h
-	src/GSM610/gsm610_priv.h
-	src/GSM610/add.c
-	src/GSM610/code.c
-	src/GSM610/decode.c
-	src/GSM610/gsm_create.c
-	src/GSM610/gsm_decode.c
-	src/GSM610/gsm_destroy.c
-	src/GSM610/gsm_encode.c
-	src/GSM610/gsm_option.c
-	src/GSM610/long_term.c
-	src/GSM610/lpc.c
-	src/GSM610/preprocess.c
-	src/GSM610/rpe.c
-	src/GSM610/short_term.c
-	src/GSM610/table.c
-	src/G72x/g72x.h
-	src/G72x/g72x_priv.h
-	src/G72x/g721.c
-	src/G72x/g723_16.c
-	src/G72x/g723_24.c
-	src/G72x/g723_40.c
-	src/G72x/g72x.c
 	src/ALAC/ALACAudioTypes.h
 	src/ALAC/ALACBitUtilities.h
 	src/ALAC/EndianPortable.h
@@ -1573,7 +1547,6 @@ if (BUILD_TESTING)
 		stdio_test
 		pipe_test
 		virtual_io_test
-		g72x_test
 		)
 
 #	if (WIN32 AND BUILD_SHARED_LIBS)

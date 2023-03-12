@@ -269,10 +269,6 @@ wav_open	(SF_PRIVATE *psf)
 					error = wavlike_msadpcm_init (psf, blockalign, framesperblock) ;
 					break ;
 
-		case SF_FORMAT_G721_32 :
-					error = g72x_init (psf) ;
-					break ;
-
 		case SF_FORMAT_NMS_ADPCM_16 :
 		case SF_FORMAT_NMS_ADPCM_24 :
 		case SF_FORMAT_NMS_ADPCM_32 :
@@ -280,10 +276,6 @@ wav_open	(SF_PRIVATE *psf)
 					break ;
 
 		/* Lite remove end */
-
-		case SF_FORMAT_GSM610 :
-					error = gsm610_init (psf) ;
-					break ;
 
 		case SF_FORMAT_MPEG_LAYER_III :
 					error = mpeg_init (psf, SF_BITRATE_MODE_CONSTANT, SF_FALSE) ;

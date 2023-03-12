@@ -206,10 +206,6 @@ w64_open	(SF_PRIVATE *psf)
 					break ;
 		/* Lite remove end */
 
-		case SF_FORMAT_GSM610 :
-					error = gsm610_init (psf) ;
-					break ;
-
 		default : 	return SFE_UNIMPLEMENTED ;
 		} ;
 
